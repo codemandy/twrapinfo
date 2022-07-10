@@ -7,22 +7,6 @@ fields:
   config:
     required: false
   label: Title
-- name: category
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - original
-    - flowers
-    - bracelets
-    - pearls
-    source:
-      type: simple
-      section:
-      file:
-      path:
-  label: Category
 - name: url
   type: text
   config:
@@ -44,5 +28,21 @@ fields:
   label: layout
   default: layouts/post.html
   hidden: true
+- name: tag
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - original
+    - flowers
+    - bracelets
+    - pearls
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Tag
 pages:
 - src/blog/posts/t-wrap-1.md
