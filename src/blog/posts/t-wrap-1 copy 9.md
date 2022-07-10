@@ -1,5 +1,5 @@
 ---
-category: T-wrap flowers
+category: flowers
 layout: layouts/post.html
 title: T-Wrap 1
 url: www.twrap.dk

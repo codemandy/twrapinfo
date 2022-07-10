@@ -13,14 +13,15 @@ fields:
   config:
     required: false
     options:
-    - T-wrap flowers
-    - T-wrap bracelets
-    - T-wrap pearls
+    - original
+    - flowers
+    - bracelets
+    - pearls
     source:
       type: simple
-      section: 
-      file: 
-      path: 
+      section:
+      file:
+      path:
   label: Category
 - name: url
   type: text

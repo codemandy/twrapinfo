@@ -6,17 +6,13 @@
 
 {% block content %}
   <div id="scroll__container">
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            {% for post in collections.posts %}
-            <a href="{{post.url}}"> {{ post.data.category }}</a>
-            {% endfor %}
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <ul>
+      <li class="cat__item"><a href="/">All Products</a></li>
+      <li class="cat__item"><a href="/categories/original">T-wrap original</a></li>
+      <li class="cat__item"><a href="/categories/bracelets">T-wrap bracelets</a></li>
+      <li class="cat__item"><a href="/categories/flowers">T-wrap flowers</a></li>
+      <li class="cat__item"><a href="/categories/pearls">T-wrap pearls </a></li>
+    </ul>
   </div>
 
 
