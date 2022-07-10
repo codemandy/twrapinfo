@@ -44,7 +44,7 @@ fields:
   config:
     required: false
   label: permalink
-  default: '"/{{ title | slugify }}/"'
+  default: "/{{ title | slugify }}/"
   hidden: true
 pages:
 - src/blog/posts/t-wrap-2.md
