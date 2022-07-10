@@ -21,13 +21,6 @@ fields:
   config:
     maxSize: 64
   label: FeaturedImage
-- name: layout
-  type: text
-  config:
-    required: false
-  label: layout
-  default: layouts/post.html
-  hidden: true
 - name: tags
   type: select
   default: []
@@ -44,6 +37,20 @@ fields:
       file: 
       path: 
   label: Tag
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  default: layouts/post.html
+  hidden: true
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: permalink
+  default: '"/{{ title | slugify }}/"'
+  hidden: true
 pages:
 - src/blog/posts/t-wrap-2.md
 - src/blog/posts/t-wrap-3.md
