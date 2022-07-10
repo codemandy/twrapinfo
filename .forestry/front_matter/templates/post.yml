@@ -40,10 +40,10 @@ fields:
     - pearls
     source:
       type: simple
-      section:
-      file:
-      path:
+      section: 
+      file: 
+      path: 
   label: Tag
 pages:
-- src/blog/posts/t-wrap-1.md
 - src/blog/posts/t-wrap-2.md
+- src/blog/posts/t-wrap-3.md
