@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.html
-tags: flowers
+tags: bracelets
 title: T-wrap 2
 url: www.t-wrap.com
 images: []
