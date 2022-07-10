@@ -1,0 +1,69 @@
+---
+label: post
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: info
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Info
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Description
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+- name: url
+  type: text
+  config:
+    required: false
+  label: Url
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  default: layouts/post.html
+  hidden: true
+- name: colorpicker
+  type: color
+  label: Colorpicker
+  config:
+    required: false
+    color_format: RGB
+  default: rgb(255, 0, 0)
+- name: backgroundimage
+  type: file
+  config:
+    maxSize: 64
+  label: BackgroundImage
+- name: featuredimage
+  type: file
+  config:
+    maxSize: 64
+  label: FeaturedImage
+pages:
+- src/blog/posts/hello.md
+- src/blog/posts/magnum-opus.md
+- src/blog/posts/this-is-a-test.md

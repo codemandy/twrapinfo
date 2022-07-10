@@ -1,0 +1,47 @@
+---
+layout: layouts/landing.html
+title: T-wrap
+---
+
+{% block head %}
+<link rel="stylesheet" href="/css/landing.css">
+<link rel="stylesheet" href="/css/form.css">
+{% endblock %}
+
+{% block content %}
+
+    <div class="boxes">
+      <div class="box box1">
+        <h2> emancipa(t/ss)ionsfrugten </h2>
+        <p>Forlaget emancipa(t/ss)ionsfrugten v/ Kasper Hesselbjerg og Absalon Kirkeby</p>
+        <br>
+        <p>Alle udgivelser forhandles på Saxo.com
+          og hos Møllegades boghandel.
+          Møllegade 8A 2200 København N
+
+          Udvalgte udgivelser forhandles desuden ved
+          Den Frie Udstilingsbygning, København
+          Motto — Kunsthal Charlottenborg, København
+          Århus Kunstbygning, Århus
+          Brandts Klædefabrik, Odense
+
+          Bøgerne kan desuden bestilles hos Dafolo,
+          dog mod et forsendelsesgebyr.</p>
+      </div>
+      <div class="box box2">
+        <img src="/assets/images/3.jpeg" alt="">
+        <p>Newsletter</p>
+        {% block form %}
+        {% include "form.html" %}
+        {% endblock %}
+        <p>
+          Né en 1964, à Aylesbury, Angleterre. Vit et travaille à New York et Londres.
+          Liam Gillick questionne les structures et architectures qui nous entourent et modèlent nos comportements. Ses oeuvres, en apparence fonctionnelles, sont des espaces potentiels, des plateformes destinées à accueillir tout type de relation interhumaine. Il interroge également avec humour l’utilité, la fonction réelle de l’art et de ses formes dans notre société, qui devient dans sa pratique davantage un lieu de réflexion, de débat et de discussion.        </p>
+      </div>
+      <div class="box box3">
+        <h2 id="all__books"><a href="/blog/">See all books and publications</a></h2>
+        <img src="/assets/images/4.jpeg" alt="">
+      </div>
+    </div>
+  </article>
+{% endblock %}
