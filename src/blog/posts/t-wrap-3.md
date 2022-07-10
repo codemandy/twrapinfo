@@ -4,6 +4,6 @@ tags: pearls
 title: T-wrap 3
 url: www.twrap.com
 images: []
-featuredimage: src/assets/images/t-wrap1_5.jpg
+featuredimage: assets/images/t-wrap1_5.jpg
 
 ---
