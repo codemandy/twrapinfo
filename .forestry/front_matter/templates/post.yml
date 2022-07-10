@@ -39,11 +39,11 @@ fields:
   label: layout
   default: layouts/post.html
   hidden: true
-- name: permalink
+- name: url
   type: text
   config:
     required: false
-  label: permalink
+  label: url
   default: "/{{ title | slugify }}/"
   hidden: true
 pages:
