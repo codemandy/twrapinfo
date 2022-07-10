@@ -11,9 +11,9 @@
   <ul class="image-list-small">
     {% for post in collections.bracelets %}
     <li>
-      <a href="#" style="background-image: url(/{{post.data.featuredimage}});"></a>
+      <a href="/{{post.data.permalink}}" style="background-image: url(/{{post.data.featuredimage}});"></a>
       <div class="details">
-        <h3><a href="{{post.data.url}}"></a>{{post.data.title}}</h3>
+        <h3><a href=/"{{post.data.permalink}}"></a>{{post.data.title}}</h3>
         <p class="image-author">{{ post.data.tags }}</p>
       </div>
     </li>

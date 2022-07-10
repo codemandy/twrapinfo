@@ -1,7 +1,7 @@
 ---
 tags: original
 layout: layouts/post.html
-permalink: '"/{{ title | slugify }}/"'
+permalink: '/{{ title | slugify }}/'
 title: T-wrap 4
 url: www.twrap.com
 images: []
