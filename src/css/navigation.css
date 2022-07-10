@@ -5,7 +5,7 @@ margin-bottom: 50px;
 
 .navigation__list {
   display: grid;
-  grid-template-columns: 1fr repeat(3, fit-content(50px));
+  grid-template-columns: 1fr repeat(3, fit-content(60px));
   grid-gap: 20px;
   justify-items: end;
 }
@@ -17,6 +17,12 @@ margin-bottom: 50px;
 
 .nav__item {
   list-style: none;
+}
+
+.navigation__list > li > a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 a {
