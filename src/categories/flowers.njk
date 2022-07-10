@@ -25,3 +25,12 @@
       </div>
   {% endfor %}
 {% endblock %}
+
+
+<ul>
+{%- for post in collections.post -%}
+  <li{% if post.data.tag == "flowers" %}
+
+  {% endif %}>{{ post.data.title }}</li>
+{%- endfor -%}
+</ul>

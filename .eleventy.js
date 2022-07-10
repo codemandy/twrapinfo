@@ -9,6 +9,10 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob('src/blog/posts/**/*.md');
   })
 
+  eleventyConfig.addCollection("specialCollection", function (collection) {
+    return collection.getAll().filter((item) => item.data.customKey);
+  });
+
 
   return {
     dir: {
