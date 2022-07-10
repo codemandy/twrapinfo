@@ -1,0 +1,46 @@
+body {
+  background-color: white;
+}
+
+
+.post__content {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#all__books {
+  color: blue;
+}
+
+
+p {
+  font-size: 20px;
+
+}
+
+img {
+  max-width: 100%;
+  padding: 2px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  border: 1px solid #444;
+  padding: 10px;
+  margin: 10px;
+  flex: 1 1 200px;
+  min-width: 1px;
+}
+
+.box2 {
+  flex: 1 10 300px;
+}
+
+
+.box3 {
+  flex: 1 10 500px;
+}
