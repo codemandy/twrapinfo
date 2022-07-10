@@ -7,29 +7,20 @@ fields:
   config:
     required: false
   label: Title
-- name: info
-  type: textarea
-  default: ''
+- name: category
+  type: select
+  default: []
   config:
     required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Info
-- name: description
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Description
-- name: author
-  type: text
-  config:
-    required: false
-  label: Author
+    options:
+    - T-wrap flowers
+    - T-wrap bracelets
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
 - name: url
   type: text
   config:
@@ -39,6 +30,11 @@ fields:
   type: image_gallery
   config: {}
   label: Images
+- name: featuredimage
+  type: file
+  config:
+    maxSize: 64
+  label: FeaturedImage
 - name: layout
   type: text
   config:
@@ -46,20 +42,3 @@ fields:
   label: layout
   default: layouts/post.html
   hidden: true
-- name: colorpicker
-  type: color
-  label: Colorpicker
-  config:
-    required: false
-    color_format: RGB
-  default: rgb(255, 0, 0)
-- name: backgroundimage
-  type: file
-  config:
-    maxSize: 64
-  label: BackgroundImage
-- name: featuredimage
-  type: file
-  config:
-    maxSize: 64
-  label: FeaturedImage
