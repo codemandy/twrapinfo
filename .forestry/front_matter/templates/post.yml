@@ -18,9 +18,9 @@ fields:
     - T-wrap pearls
     source:
       type: simple
-      section:
-      file:
-      path:
+      section: 
+      file: 
+      path: 
   label: Category
 - name: url
   type: text
@@ -43,3 +43,5 @@ fields:
   label: layout
   default: layouts/post.html
   hidden: true
+pages:
+- src/blog/posts/t-wrap-1.md
