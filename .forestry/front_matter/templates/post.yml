@@ -39,13 +39,13 @@ fields:
   label: layout
   default: layouts/post.html
   hidden: true
-- name: url
+- name: permalink
   type: text
   config:
     required: false
-  label: url
   default: "/{{ title | slugify }}/"
   hidden: true
+  label: permalink
 pages:
 - src/blog/posts/t-wrap-2.md
 - src/blog/posts/t-wrap-3.md
