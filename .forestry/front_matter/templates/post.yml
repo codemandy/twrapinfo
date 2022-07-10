@@ -63,7 +63,3 @@ fields:
   config:
     maxSize: 64
   label: FeaturedImage
-pages:
-- src/blog/posts/hello.md
-- src/blog/posts/magnum-opus.md
-- src/blog/posts/this-is-a-test.md
