@@ -46,3 +46,4 @@ fields:
   label: Tag
 pages:
 - src/blog/posts/t-wrap-1.md
+- src/blog/posts/t-wrap-2.md
