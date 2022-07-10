@@ -7,11 +7,6 @@ fields:
   config:
     required: false
   label: Title
-- name: url
-  type: text
-  config:
-    required: false
-  label: Url
 - name: images
   type: image_gallery
   config: {}
