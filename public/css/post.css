@@ -8,6 +8,10 @@
   max-width: 1200px;
 }
 
+.product__decription {
+
+
+}
 
 p {
   font-size: 20px;
@@ -16,7 +20,8 @@ p {
 
 img {
   max-width: 100%;
-  padding: 2px;
+  padding-left: 5px;
+
 }
 
 .boxes {
@@ -33,10 +38,11 @@ img {
 }
 
 .box2 {
-  flex: 1 10 300px;
+  flex: 700px;
 }
 
 
 .box3 {
-  flex: 1 10 500px;
+  flex: 500px;
+
 }

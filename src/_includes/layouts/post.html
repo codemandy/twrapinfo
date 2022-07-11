@@ -10,21 +10,21 @@
   {% include "sidebar.html" %}
     <article class="post__content">
       <h2>{{title}}</h2>
-      <p class="post__description">{{author}} {{info}}</p>
       <br>
-      <p class="post__description">{{description}}</p>
       <div class="boxes">
         <div class="box box3">
-          <img src="{{post.data.featuredimage}}" alt="">
+          <img src="/{{featuredimage}}" alt="" height="700px">
         </div>
         <div class="box box2">
-          <p>
-            Né en 1964, à Aylesbury, Angleterre. Vit et travaille à New York et Londres.
-            Liam Gillick questionne les structures et architectures qui nous entourent et modèlent nos comportements. Ses oeuvres, en apparence fonctionnelles, sont des espaces potentiels, des plateformes destinées à accueillir tout type de relation interhumaine. Il interroge également avec humour l’utilité, la fonction réelle de l’art et de ses formes dans notre société, qui devient dans sa pratique davantage un lieu de réflexion, de débat et de discussion.        </p>
+          <h3>Description</h3>
+          <p class="product__decription">
+            {{description}}
+           </p>
+           <br>
+        <h3>Add to order</h3>
         </div>
-        <div class="box box1">
-          <img src="/assets/images/4.jpeg" alt="">
-        </div>
+
+
       </div>
     </article>
 </div>
