@@ -5,5 +5,7 @@ title: T-wrap 3
 images: []
 featuredimage: assets/images/t-wrap1_5.jpg
 permalink: "/{{ title | slugify }}/"
+description: This product is amazingThis product is amazingThis product is amazingThis
+  product is amazingThis product is amazing
 
 ---
