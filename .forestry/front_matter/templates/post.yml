@@ -46,6 +46,11 @@ fields:
   default: "/{{ title | slugify }}/"
   hidden: true
   label: permalink
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
 pages:
 - src/blog/posts/t-wrap-2.md
 - src/blog/posts/t-wrap-3.md
