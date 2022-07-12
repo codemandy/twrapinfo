@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@sindresorhus/slugify": "^2.1.0",
+    "eleventy-plugin-embed-everything": "^1.14.0",
     "malihu-custom-scrollbar-plugin": "^3.1.5"
   }
 }
