@@ -8,9 +8,10 @@
   max-width: 1200px;
 }
 
-.product__decription {
-
-
+.snipcart-add-item {
+  padding: 2px 5px;
+  background-color: white;
+  color: black;
 }
 
 p {

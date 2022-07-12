@@ -17,29 +17,21 @@
         </div>
         <div class="box box2">
           <h3>Description</h3>
-          <p class="product__decription">
-            {{description}}
-           </p>
-           <br>
-        <h3>Add to order</h3>
-        <p class="price">{{ post.data.price | money }}</p>
-
-        <p>
-          <jamcart-add
-        include-form-data
-        image="/{{ featuredimage }}"
-        name="{{ title }}"
-        price="{{ price }}"
-        url="{{ page.url }}"><p>Add to cart</p>
-
-      </jamcart-add>
-    </p>
-
-
-
+            <p class="product__decription">
+              {{description}}
+            </p>
+            <br>
+            <p>
+            <button class="snipcart-add-item"
+              data-item-id="T-wrap"
+              data-item-price="0"
+              data-item-description="{{  description }}"
+              data-item-image="/{{  featuredimage }}"
+              data-item-name="{{  title  }}">
+              Add to cart
+          </button>
+          </p>
         </div>
-
-
       </div>
     </article>
     {% endblock %}
