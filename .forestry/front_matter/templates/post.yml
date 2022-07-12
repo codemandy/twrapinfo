@@ -53,6 +53,16 @@ fields:
   label: Description
   default: T-wrap feather is packed by 10 pieces of the same design.
   hidden: true
+- name: price
+  type: number
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  label: Price
 pages:
 - src/blog/posts/pearls/random-pearl.md
 - src/blog/posts/pearls/super-random-pearl.md
