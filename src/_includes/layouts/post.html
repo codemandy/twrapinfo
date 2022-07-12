@@ -22,10 +22,25 @@
            </p>
            <br>
         <h3>Add to order</h3>
+        <p class="price">{{ post.data.price | money }}</p>
+
+        <p>
+          <jamcart-add
+        include-form-data
+        image="/{{ featuredimage }}"
+        name="{{ title }}"
+        price="{{ price }}"
+        url="{{ page.url }}"><p>Add to cart</p>
+
+      </jamcart-add>
+    </p>
+
+
+
         </div>
 
 
       </div>
     </article>
+    {% endblock %}
 </div>
-{% endblock %}
