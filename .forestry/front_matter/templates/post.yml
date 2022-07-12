@@ -25,6 +25,7 @@ fields:
     - flowers
     - bracelets
     - pearls
+    - feather
     source:
       type: simple
       section: 
