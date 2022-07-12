@@ -54,3 +54,5 @@ fields:
   default: T-wrap feather is packed by 10 pieces of the same design. <br> 1 unit is
     10 pieces
   hidden: true
+pages:
+- src/blog/posts/pearls/random-pearl.md
