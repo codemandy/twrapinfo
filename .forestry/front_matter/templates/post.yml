@@ -51,3 +51,6 @@ fields:
   config:
     required: false
   label: Description
+  default: T-wrap feather is packed by 10 pieces of the same design. 1 unit is 10
+    pieces
+  hidden: true
