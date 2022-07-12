@@ -55,3 +55,4 @@ fields:
   hidden: true
 pages:
 - src/blog/posts/pearls/random-pearl.md
+- src/blog/posts/pearls/super-random-pearl.md
