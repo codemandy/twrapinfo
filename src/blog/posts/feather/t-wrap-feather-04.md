@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.html
 tags: original
-title: T-wrap 4
+title: T-wrap feather 4
 images: []
 featuredimage: assets/images/original/t-wrap1_4.jpg
 permalink: "/{{ title | slugify }}/"
