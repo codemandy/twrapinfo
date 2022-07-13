@@ -15,8 +15,9 @@ margin-bottom: 50px;
   justify-self: start
 }
 
-.nav_cart {
+.nav_card {
   justify-self: end;
+  margin-right: 10px;;
 }
 
 .nav__item {
