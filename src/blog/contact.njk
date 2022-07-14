@@ -3,14 +3,26 @@
 {% block head %}
 <link rel="stylesheet" href="/css/blog.css">
 <link rel="stylesheet" href="/css/form.css">
+<link rel="stylesheet" href="/css/contact.css">
 {% include "navigation.html" %}
 {% endblock %}
 
 {% block content %}
 <div class="blog__container">
   {% include "sidebar.html" %}
-  {% include "form.html" %}
-
+  <div class="information__container">
+    <h3> Contact </h3>
+     <br>
+    <a href="mailto:sales@t-wrap.info">Send us an email</a>
+    <br>
+    <br>
+  <ul>
+    <li> Adresse: </li>
+    <li> Skraavej 5  </li>
+    <li> 2880 Bagsvaerd  </li>
+    <li> Denmark </li>
+  </ul>
 
 </div>
+
 {% endblock %}
