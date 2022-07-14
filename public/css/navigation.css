@@ -5,7 +5,7 @@ margin-bottom: 50px;
 
 .navigation__list {
   display: grid;
-  grid-template-columns: 1fr repeat(3, fit-content(60px)) 1fr;
+  grid-template-columns: 1fr repeat(4, fit-content(60px)) 1fr;
   grid-gap: 20px;
   justify-items: end;
 }

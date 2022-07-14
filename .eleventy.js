@@ -1,7 +1,10 @@
+const embedEverything = require("eleventy-plugin-embed-everything");
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/");
   eleventyConfig.addPassthroughCopy("src/css/");
   eleventyConfig.addWatchTarget("src/css/");
+  eleventyConfig.addPlugin(embedEverything);
 
 
   eleventyConfig.addCollection('posts', function(collectionApi) {
