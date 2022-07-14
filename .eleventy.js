@@ -32,7 +32,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: 'src',
       includes: '_includes',
-      output: '_public',
+      output: '_public'
     },
     templateFormats: ['md', 'njk', 'html'],
     markdownTemplateEngine: 'njk',
