@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.html
-tags: original
+tags: feather
 title: T-wrap feather 4
 images: []
 featuredimage: assets/images/original/t-wrap1_4.jpg
