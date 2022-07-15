@@ -10,6 +10,14 @@ margin-bottom: 50px;
   justify-items: end;
 }
 
+@media (max-width: 600px) {
+  .navigation__list {
+    display: block;
+   min-width: 150px;
+    }
+  }
+
+
 .fullwidth {
   grid-column: 1 / 2;
   justify-self: start
@@ -37,7 +45,7 @@ a {
 }
 
 #active {
-  color: hotpink;
+  color: pink;
 /* text-decoration: underline 2px;
 text-underline-offset: 2px; */
 }
