@@ -28,9 +28,9 @@ fields:
     - feather
     source:
       type: simple
-      section:
-      file:
-      path:
+      section: 
+      file: 
+      path: 
   label: Tag
 - name: layout
   type: text
@@ -51,17 +51,18 @@ fields:
   config:
     required: false
   label: Description
-  default: T-wrap feather is packed by 10 pieces of the same design.
+  default: T-wrap is packed by 10 pieces of the same design. Stays in the hair for
+    weeks. It's handmade and probably the worlds best "walking" commercial.
   hidden: true
 - name: price
   type: number
   label: Price
   description: ''
-  default:
+  default: 
   required: true
   config:
     min: 0
-    max:
+    max: 
     step: 0.01
     required: true
 pages:
