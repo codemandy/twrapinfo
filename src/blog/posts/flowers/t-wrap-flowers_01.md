@@ -5,5 +5,5 @@ title: T-wrap flowers 1
 images: []
 featuredimage: assets/images/flowers/flowers_1.jpg
 permalink: "/{{ title | slugify }}/"
-description: T-wrap flowers is a product that takes the original concept of the T-wrap and adds flowers to it. The product can be worn by both kids and adults.
+description: T-wrap is packed by 10 pieces of the same design. Stays in the hair for weeks. It's handmade and probably the worlds best "walking" commercial.
 ---
