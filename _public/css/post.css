@@ -1,0 +1,52 @@
+.post__container {
+  display: flex;
+}
+
+.post__content {
+  margin-left: 94px;
+  max-width: 1200px;
+}
+
+/* .snipcart-add-item {
+  padding: 2px 5px;
+  background-color: white;
+  color: black;
+} */
+
+p {
+  font-size: 20px;
+
+}
+
+img {
+  min-width: 100%;
+}
+
+@media (max-width: 600px) {
+img {
+height: 225px;
+}
+}
+
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  padding-right: 20px;
+  flex: 1 1 200px;
+  min-width: 1px;
+  margin-top: 0px;
+}
+
+.box2 {
+  flex: 700px;
+}
+
+
+.box3 {
+  flex: 500px;
+
+}

@@ -9,6 +9,7 @@
 <div class="blog__container">
   {% include "sidebar.html" %}
   <ul class="image-list-small">
+    {# <h4 class="cat__title"> Feather <h4> #}
     {% for post in collections.feather %}
     <li>
       <a href="{{post.url}}" style="background-image: url(/{{post.data.featuredimage}});"></a>
