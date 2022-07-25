@@ -16,6 +16,7 @@
   /* box-shadow: 5px 5px #000000fb; */
   box-shadow: 5px 5px rgb(231,234,233);
   border: 2px solid rgb(231,234,233);
+  cursor: pointer;
 }
 
 p {
@@ -34,7 +35,7 @@ p {
   font-size: 25px;
   /* box-shadow: 5px 5px #FF6969; */
   /* box-shadow: 5px 5px #cdcdcdb5; */
-  padding: 20px;
+  padding: 6px 4px;
 }
 
 .post__description {
