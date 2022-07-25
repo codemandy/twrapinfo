@@ -28,10 +28,11 @@ p {
 
 .post__description {
   display: inline-block;
-  background-color: #fddb6c;
+  /* background-color: #fddb6c; */
   padding-left: 2px;
   padding-right: 4px;
   color: rgb(94, 86, 249);
+  margin-top: -8px;
 }
 
 
