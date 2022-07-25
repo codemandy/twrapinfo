@@ -15,31 +15,46 @@
 
 p {
   font-size: 20px;
-
 }
 
+.post__title {
+  display: inline-block;
+  /* background-color: #d8e3f7; */
+  background-color: white;
+  margin-bottom: 5px;
+  padding-left: 2px;
+  padding-right: 4px
+}
+
+.post__description {
+  display: inline-block;
+  background-color: #fddb6c;
+  padding-left: 2px;
+  padding-right: 4px;
+  color: rgb(94, 86, 249);
+}
 
 
 @media (max-width: 800px) {
-.boxes {
-  display: flex;
+  .boxes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post__description {
   flex-direction: column;
-}
+  }
 
-#post__img {
-  width: 300px;
-}
+  .post__title {
+    flex-direction: column;
+  }
+  #post__img {
+    width: 300px;
+  }
 
-.box3 {
-  flex: 1px;
-}
-
-
-}
-
-@media (min-width: 600px) {
-
-
+  .box3 {
+    flex: 1px;
+  }
 }
 
 
@@ -62,5 +77,4 @@ p {
 
 .box3 {
   flex: 500px;
-
 }
