@@ -9,19 +9,13 @@
 <div class="post__container">
   {% include "sidebar.html" %}
     <article class="post__content">
-      <h3 class="post__title">{{title}}</h3>
-      <br>
       <div class="boxes">
         <div class="box box3">
           <img id="post__img" src="/{{featuredimage}}" alt="" >
         </div>
         <div class="box box2">
-          <h3 class="post__description">Description</h3>
-            <p class="product__decription">
-              {{description}}
-            </p>
-            <br>
-            <p>
+          <h3 class="post__title">{{title}}</h3>
+          <p>
             <button class="snipcart-add-item"
               data-item-id="T-wrap"
               data-item-price="0"
@@ -31,6 +25,12 @@
               Add to cart
           </button>
           </p>
+          <br>
+          <h3 class="post__description">Description</h3>
+            <p class="product__decription">
+              {{description}}
+            </p>
+            <br>
         </div>
       </div>
     </article>
