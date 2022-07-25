@@ -1,10 +1,16 @@
 #scroll__container {
   height:80%;
   min-width:150px;
-  /* border:0.5px solid black; */
   overflow-y: scroll;
+}
 
+@media only screen and (max-width: 600px) {
+  #scroll__container {
+   position: fixed;
+  }
 
 }
 
-.mCSB_draggerRail{width:20px;}
+
+/* .mCSB_draggerRail{width:20px;
+} */
