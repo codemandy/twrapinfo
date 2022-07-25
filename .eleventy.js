@@ -22,6 +22,11 @@ module.exports = function(eleventyConfig) {
     });
 });
 
+    const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+    module.exports = function (eleventyConfig) {
+      eleventyConfig.addPlugin(lazyImagesPlugin);
+    };
+
 
   const { minify } = require("terser");
   eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
