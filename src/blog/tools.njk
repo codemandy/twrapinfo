@@ -8,7 +8,24 @@
 {% endblock %}
 
 {% block content %}
-<div class="blog__container">
+  <div class="blog__container">
+    {% include "sidebar.html" %}
+    <ul class="image-list-small">
+      {% for post in collections.tools %}
+      <li>
+        <a href="{{post.url}}" style="background-image: url(/{{post.data.featuredimage}});"></a>
+        <div class="details">
+          <h3><a href=/"{{post.url}}"></a>{{post.data.title}}</h3>
+          <p class="image-author">{{ post.data.tags }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
+
+
+{# <div class="blog__container">
   {% include "sidebar.html" %}
   <div class="tools__container">
     <h3> Tools </h3>
@@ -19,8 +36,18 @@
       If needed please add the quantity of pliers and hooks to the order.
       <br>
       <br>
+       <p>
+            <button class="snipcart-add-item"
+              data-item-id="{{  title  }}"
+              data-item-price="0"
+              data-item-description="{{  description }}"
+              data-item-image="/{{  featuredimage }}"
+              data-item-name="{{  title  }}"
+              data-item-quantity="10"
+              data-item-quantity-step="10">
+              Add to cart
+          </button>
+          </p>
     </p>
         <img src="/assets/images/instructions/hooks_pliers.jpg" alt="" height="500px">
-</div>
-
-{% endblock %}
+</div> #}
