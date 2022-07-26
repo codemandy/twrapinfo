@@ -1,6 +1,6 @@
 <nav class="navigation">
     <ul class="navigation__list">
-      <li class="nav__item fullwidth"><a id="t-wrap" href="/blog/feather">T-wrap</a></li>
+      <li class="nav__item fullwidth"><a id="{{ 'active3' if '/' in page.url }}" href="/blog/feather">T-wrap</a></li>
       <li class="nav__item"><a id="{{ 'active' if '/blog/instructions' in page.url }}" href="/blog/instructions">Instructions</a></li>
       <li class="nav__item"><a id="{{ 'active' if '/blog/tools' in page.url }}" href="/blog/tools">Tools</a></li>
       <li class="nav__item"><a id="{{ 'active' if '/blog/order' in page.url }}" href="/blog/order">Order</a></li>
