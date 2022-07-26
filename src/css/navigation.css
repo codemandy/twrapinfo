@@ -48,7 +48,8 @@ a {
 }
 
 #active {
+  color: rgb(255, 151, 236);
+  /* text-decoration: underline 2px;
   color: pink;
-/* text-decoration: underline 2px;
 text-underline-offset: 2px; */
 }
