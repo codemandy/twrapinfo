@@ -1,13 +1,12 @@
 #scroll__container {
   height:80%;
   min-width:150px;
-  overflow-y: scroll;
 }
 
 #scroll__container_2 {
   height:80%;
   min-width:150px;
-  overflow-y: scroll;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -16,6 +15,7 @@
   }
 
 }
+
 
 #active2 {
 /* color: #f0c330; */

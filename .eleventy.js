@@ -7,9 +7,23 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(embedEverything);
 
 
-  // eleventyConfig.addCollection('posts', function(collectionApi) {
-  //   return collectionApi.getFilteredByGlob('src/blog/posts/**/*.md');
-  // })
+  const Image = require('@11ty/eleventy-img');
+
+  const imageShortcode = async (
+    src,
+    alt,
+    className = undefined,
+    widths = [400, 800, 1280],
+    formats = ['webp', 'jpeg'],
+    sizes = '100vw'
+  ) => {
+    // we'll fill this in shortly
+  };
+
+  module.exports = (eleventyConfig) => {
+    eleventyConfig.addShortcode('image', imageShortcode);
+  };
+
 
 
   eleventyConfig.addCollection("posts", function(collection) {
