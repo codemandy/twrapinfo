@@ -14,8 +14,8 @@
   font-size: 19px;
   font-weight: 700;
   /* box-shadow: 5px 5px #000000fb; */
-  box-shadow: 5px 5px rgb(231,234,233);
-  border: 2px solid rgb(231,234,233);
+  box-shadow: 5px 5px rgb(231, 234, 233);
+  border: 2px solid rgb(231, 234, 233);
   cursor: pointer;
 }
 
@@ -30,7 +30,7 @@ p {
   margin-bottom: 13px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 2px solid rgb(231,234,233);
+  border: 2px solid rgb(231, 234, 233);
   /* border: 2px dotted  black; */
   font-size: 25px;
   /* box-shadow: 5px 5px #FF6969; */
@@ -45,16 +45,14 @@ p {
   font-size: 20px;
   /* border: 2px solid rgb(231,234,233); */
   /* margin-bottom: 1px; */
-
 }
 
 .product__decription {
-font-size: 17px;
-line-height: 1.4;
-/* border: 2px solid rgb(231,234,233);
+  font-size: 17px;
+  line-height: 1.4;
+  /* border: 2px solid rgb(231,234,233);
 padding: 2px; */
 }
-
 
 @media (max-width: 800px) {
   .boxes {
@@ -63,7 +61,7 @@ padding: 2px; */
   }
 
   .post__description {
-  flex-direction: column;
+    flex-direction: column;
   }
 
   .post__title {
@@ -72,16 +70,11 @@ padding: 2px; */
   #post__img {
     width: 300px;
   }
-
-  .box3 {
-    flex: 1px;
-  }
 }
 
-
 .boxes {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .box {
@@ -92,10 +85,16 @@ padding: 2px; */
 }
 
 .box2 {
-  flex: 700px;
+  max-width: 650px;
 }
 
-
 .box3 {
-  flex: 500px;
+  width: 100%; /* Full width of its parent */
+  max-width: 500px; /* Maximum width */
+}
+
+.box3 img {
+  max-height: 600px; /* Maximum height */
+  width: 100%; /* Full width of its container (.box3) */
+  height: auto; /* Maintain aspect ratio */
 }
