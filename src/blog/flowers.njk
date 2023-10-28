@@ -1,23 +1,31 @@
 {% extends "layouts/base.html" %}
 
 {% block head %}
-<link rel="stylesheet" href="/css/blog.css">
-{% include "navigation.html" %}
+  <link rel="stylesheet" href="/css/blog.css">
+  {% include "navigation.html" %}
 {% endblock %}
 
 {% block content %}
-<div class="blog__container">
-  {% include "sidebar.html" %}
-  <ul class="image-list-small">
-    {% for post in collections.flowers %}
-    <li>
-      <a href="{{post.url}}" style="background-image: url(/{{post.data.featuredimage}});"></a>
-      <div class="details">
-        <h3><a href=/"{{post.url}}"></a>{{post.data.title}}</h3>
-        <p class="image-author">{{ post.data.tags }}</p>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+  <div class="blog__container">
+    {% include "sidebar.html" %}
+    <ul class="image-list-small">
+      {% for post in collections.flowers %}
+        <li>
+          <a href="{{ post.url }}">
+            <div class="image-wrapper">
+              {% image post.data.featuredimage,
+              "Alt text",
+              "100vw" %}
+            </div>
+          </a>
+          <div class="details">
+            <h3>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h3>
+            <p class="image-author">{{ post.data.tags }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endblock %}

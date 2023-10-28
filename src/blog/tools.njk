@@ -1,10 +1,9 @@
 {% extends "layouts/base.html" %}
 
 {% block head %}
-<link rel="stylesheet" href="/css/blog.css">
-<link rel="stylesheet" href="/css/tools.css">
-
-{% include "navigation.html" %}
+  <link rel="stylesheet" href="/css/blog.css">
+  <link rel="stylesheet" href="/css/tools.css">
+  {% include "navigation.html" %}
 {% endblock %}
 
 {% block content %}
@@ -12,42 +11,22 @@
     {% include "sidebar.html" %}
     <ul class="image-list-small">
       {% for post in collections.tools %}
-      <li>
-        <a href="{{post.url}}" style="background-image: url(/{{post.data.featuredimage}});"></a>
-        <div class="details">
-          <h3><a href=/"{{post.url}}"></a>{{post.data.title}}</h3>
-          <p class="image-author">{{ post.data.tags }}</p>
-        </div>
-      </li>
+        <li>
+          <a href="{{ post.url }}">
+            <div class="image-wrapper">
+              {% image post.data.featuredimage,
+              "Alt text",
+              "100vw" %}
+            </div>
+          </a>
+          <div class="details">
+            <h3>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h3>
+            <p class="image-author">{{ post.data.tags }}</p>
+          </div>
+        </li>
       {% endfor %}
     </ul>
   </div>
 {% endblock %}
-
-
-{# <div class="blog__container">
-  {% include "sidebar.html" %}
-  <div class="tools__container">
-    <h3> Tools </h3>
-    <p class="information__guide">
-      The hook is for pulling a small portion of hair through the metal tube on the T-wrap. <br>
-      The plier is used to squeeze the metal tube around a small portion of hair in order to attach the T-wrap in the hair.
-      <br>
-      If needed please add the quantity of pliers and hooks to the order.
-      <br>
-      <br>
-       <p>
-            <button class="snipcart-add-item"
-              data-item-id="{{  title  }}"
-              data-item-price="0"
-              data-item-description="{{  description }}"
-              data-item-image="/{{  featuredimage }}"
-              data-item-name="{{  title  }}"
-              data-item-quantity="10"
-              data-item-quantity-step="10">
-              Add to cart
-          </button>
-          </p>
-    </p>
-        <img src="/assets/images/instructions/hooks_pliers.jpg" alt="" height="500px">
-</div> #}
