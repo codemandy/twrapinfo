@@ -3,6 +3,8 @@ li {
   list-style: none;
 }
 
-.contact__container {
-  /* margin-left: 92px; */
+@media (min-width: 800px) {
+  .contact__container {
+    margin-left: 80px;
+  }
 }

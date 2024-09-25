@@ -1,3 +1,5 @@
-.instructions__container {
-  /* margin-left: 92px; */
+@media (min-width: 800px) {
+  .instructions__container {
+    margin-left: 80px;
+  }
 }
