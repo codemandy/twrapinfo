@@ -19,12 +19,12 @@
   max-width: 1300px;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   .image-list-small {
-    /* margin-left: 160px; */
+    margin-left: 66px;
   }
   .blog__container {
-    /* display: flex; */
+    display: flex;
   }
 }
 
