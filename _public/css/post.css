@@ -1,10 +1,15 @@
-.post__container {
-  display: flex;
+.post__content {
+  max-width: 1200px;
 }
 
-.post__content {
-  /* margin-left: 94px; */
-  max-width: 1200px;
+@media (min-width: 800px) {
+  .post__container {
+    display: flex;
+  }
+
+  .post__content {
+    margin-left: 80px;
+  }
 }
 
 .snipcart-add-item {
@@ -66,15 +71,18 @@ padding: 2px; */
 
   .post__title {
     flex-direction: column;
+    margin-top: 1rem;
   }
   #post__img {
     width: 300px;
   }
 }
 
-.boxes {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+@media (min-width: 800px) {
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 .box {
