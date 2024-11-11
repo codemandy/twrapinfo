@@ -10,7 +10,7 @@
   <div class="blog__container">
     {% include "sidebar.html" %}
     <ul class="image-list-small">
-      {% for post in collections.posts %}
+      {% for post in collections.posts | filterByTag("tools") %}
         <li>
           <a href="{{ post.url }}">
             <div class="image-wrapper">

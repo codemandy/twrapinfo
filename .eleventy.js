@@ -35,12 +35,18 @@ module.exports = function (eleventyConfig) {
     return collection
       .getFilteredByGlob("src/blog/posts/**/*.md")
       .sort(function (a, b) {
-        let nameA = a.data.title.toUpperCase();
-        let nameB = b.data.title.toUpperCase();
+        // Fallback to empty string if title is undefined
+        let nameA = (a.data.title || "").toUpperCase();
+        let nameB = (b.data.title || "").toUpperCase();
+
         if (nameA < nameB) return -1;
         else if (nameA > nameB) return 1;
         else return 0;
       });
+  });
+
+  eleventyConfig.addFilter("filterByTag", function (posts, tag) {
+    return posts.filter((post) => !post.data.tags.includes(tag));
   });
 
   const { minify } = require("terser");
